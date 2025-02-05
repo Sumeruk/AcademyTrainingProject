@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Добро пожаловать!</title>
+</head>
+<body>
+<h1>Добро пожаловать на мой сайт!</h1>
+<p>Это ваша первая страница на Spring Boot.</p>
+
+<h1 th:text="${randDouble}"></h1>
+
+<form action="/randNum" method="get">
+    <button type="submit" class="button">Перейти на генератор чисел</button>
+</form>
+
+<form action="/rest/index" method="get">
+    <button type="submit" class="button">Перейти на простой JSON</button>
+</form>
+
+<form action="/rest/man" method="get">
+    <button type="submit" class="button">Перейти на объектный JSON</button>
+</form>
+</body>
+</html>
